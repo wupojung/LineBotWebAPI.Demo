@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Po-Lung, Wu",
+  "classifications": [ "Common", "Console" ],
+  "identity": "LineBotWebAPI",
+  "name": "LineBotWebAPI",
+  "shortName": "linebotapi",
+  "sourceName":"LineBotWebAPI",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  }
+}
