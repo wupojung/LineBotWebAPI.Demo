@@ -19,4 +19,6 @@ Then,Get  **channelSecret** and **accessToken**
 
 Last,replace they on  **appsettings.json**
 
+### Tips
+message api & content api URL was different
 ## Enjoy ~

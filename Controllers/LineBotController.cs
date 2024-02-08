@@ -28,8 +28,7 @@ public class LineBotController : ControllerBase
     public async Task<IActionResult> Post()
     {
         var events = await _httpContext.Request.GetWebhookEventsAsync(_lineBotConfig.channelSecret);
-        var lineMessagingClient = new LineMessagingClient(_lineBotConfig.accessToken);
-        var lineBotApp = new LineBotApp(lineMessagingClient, _lineService);
+        var lineBotApp = new LineBotApp(_lineBotConfig, _lineService);
         await lineBotApp.RunAsync(events);
 
         return Ok();
